@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postgraduation Application Form</title>
+    <link rel="stylesheet" href="Application.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Color Example</title>
+    <style>
+        /* Set the entire page background color */
+        body {
+            background-color: #f0f8ff; /* Light blue color */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Set a background color for a specific section */
+        .content-section {
+            background-color: #f2f7b2; /* Light pink color */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group .column {
+            width: 48%;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    </style>
+</head>
+<body>
+    <!-- Background color applies to the entire page -->
+    <h1 style="font-size: 30px;text-align: center; color: red;">Welcome to the College Application Portal</h1>
+
+    <!-- Background color applies to this specific section -->
+    <div class="content-section">
+        <p>T John College - PG College</p>
+    </div>
+</body>
+</html>
+
+    <div class="container">
+        <h2 style="font-size:15px ;">Postgraduation Application Form<br>
+             <p style="font-size: 27px;"> T John College<br>
+             <p style="font-size:18px;">Bannerghatta Rd, Gottigere, Bengaluru - 560083</p>
+            </h2>
+        <form action="submit_postgrad_application.php" method="post">
+            <!-- Personal Information -->
+             <fieldset>
+                <legend>Personal Information</legend>
+           
+                <form action="#" method="post">
+                    <!-- First Row: Name and Email -->
+                    <div class="form-group">
+                        <div class="column">
+                    
+                            <label for="student-name"> Student Name</label>
+                            <input type="text" id="student-name" name="first-name" required>
+                        </div>
+                        <div class="column">
+                            <label for="father-name">Father Name</label>
+                            <input type="text" id="father-name" name="last-name" required>
+
+                           
+                        </div>
+                    </div>
+            
+                    <!-- Second Row: Email and Phone -->
+                    <div class="form-group">
+                        <div class="column">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="column">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+            
+                    <!-- Third Row: Date of Birth and Gender -->
+                    <div class="form-group">
+                        <div class="column">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="column">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                   
+            
+                    
+            
+                    <!-- Sixth Row: Address (Full Width) -->
+                    <div class="form-group">
+                        <div class="column" style="width: 100%;">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="4" required></textarea>
+                        </div>
+                    </div>
+            
+                
+        </fieldset>
+                
+
+            <!-- Undergraduate Academic Information -->
+            <fieldset>
+                <legend>Undergraduate Academic Information</legend>
+                <form action="#" method="post">
+                    <!-- First Row:Undergraduate University  and  Undergraduate degree-->
+                    <div class="form-group">
+                        <div class="column">
+
+                            <label for="ug_university">Undergraduate University:</label>
+                            <input type="text" id="ug_university" name="ug_university" required><br><br>
+                </div>
+                <div class="column">
+
+                          <label for="ug_degree">Undergraduate Degree:</label>
+                          <input type="text" id="ug_degree" name="ug_degree" required><br><br>
+
+                </div>
+             </div>
+
+             <!-- Second Row:Undergraduate Major  and  Undergraduate GPA-->
+             <div class="form-group">
+                <div class="column">
+
+                <label for="ug_major">Undergraduate Major:</label>
+                <input type="text" id="ug_major" name="ug_major" required><br><br>
+
+            </div>
+            <div class="column">
+
+                <label for="ug_cgpa">Undergraduate CGPA:</label>
+                <input type="text" id="ug_cgpa" name="ug_cgpa" required><br><br>
+                </div>
+                </div>
+            </fieldset>
+
+            <!-- Postgraduate Course Information -->
+            <fieldset>
+                <legend>Postgraduate Course Information</legend>
+                <label for="pg_course">Intended Postgraduate Course:</label>
+                <select id="pg_course" name="pg_course" required>
+                    <option value="" disabled selected>Select your course</option>
+                    <option value="msc_computer_science">MSc in Computer Science</option>
+                    <option value="msc_mathematics">MSc in Mathematics</option>
+                    <option value="msc_physics">MSc in Physics</option>
+                    <option value="mba">Master of Business Administration (MBA)</option>
+                    <option value="mca">MCA</option>
+                    <option value="ma_psychology">MA in Psychology</option>
+                    <option value="msc_bio-chemistry">MSc in Bio-Chemistry</option>
+                </select><br><br>
+
+        
+            </fieldset>
+
+    
+
+            <!-- Submit Section -->
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Application.css">
+</head>
+<body>
+    
+</form>
+<div id="errorMessages" style="color: red;"></div>
+</div>
+
+<script src="Form.js"></script>
+
+    <footer>
+        <p>Developed by <strong>Sahana D N</strong></p>
+    </footer>
+</body>
+</html>
+
+    
+
+</body>
+</html>
